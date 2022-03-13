@@ -1,0 +1,17 @@
+{
+  "name": "time-in-blocks",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host"
+  },
+  "private": true,
+  "devDependencies": {
+    "vite": "^2.7.2"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "smooth-scroll-into-view-if-needed": "^1.1.33"
+  }
+}

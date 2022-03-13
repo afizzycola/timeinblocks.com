@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time in Blocks: convert normal time into Bitcoin blocktime</title>
+    <meta name="description" content="Convert normal time into Bitcoin blocktime">
+    <meta property="og:title" content="Time in Blocks" />
+    <meta property="og:url" content="https://www.timeinblock.com/" />
+    <meta property="og:description" content="Convert normal time into Bitcoin blocktime">
+    <meta property="og:image" content="https://tib-og-image-generator.vercel.app/%20.png/?theme=dark">
+    <meta property="og:type" content="website" />
+  </head>
+  <body class="dark">
+    <div class="container">
+      <div id="header-section">
+        <h1 id="api-docs-button"><span class="button material-icons">library_books</span></h1>
+        <h1 id="home-button" class="button">Time->in->Blocks</h1>
+        <h1 id="info-button"><span class="button material-icons">info</span></h1>
+      </div>
+      <div id="api-overlay" class="hide dark">
+        <p>A Time-in-Blocks API is coming soon.</p>
+        <p>If you are interested, DM us on Twitter</p>
+        <p>or contact us via email <a href="mailto:api@timeinblocks.com" target="_blank">api@timeinblocks.com</a></p>
+      </div>
+      <div id="info-overlay" class="hide dark">
+        <p>Time->In->Blocks is a way of describing time in units of Bitcoin Blocks.
+          The Genesis block is the equivalent of the birth of Christ or the UNIX epoch.</p>
+        <p>Time is measured in block numbers including those:
+        <ul>
+          <li>before the genesis block (BGB), represented as negative blocks;</li>
+          <li>in the current mined era where we have mined blocks and;</li>
+          <li>in the future where we still have blocks to mine.</li>
+        </ul>
+        Try some of the examples</p>
+      </div>
+      <div id="coverable-container" class="container">
+        <div id="slider-section">
+          <div id="blocks-list"></div>
+        </div>
+        <div><h1 id="block-number"></h1></div>
+        <div id="inputs-section">
+          <input type="datetime-local" id="datetime-picker"/>
+          <input type="submit" id="datetime-submit" class="button" value="Convert to Blocktime"/>
+          <a target="_blank" class="twitter-share-button button" href="https://twitter.com/intent/tweet?text=Convert%20Time%20to%20Blocktime%20with%20timeinblocks.com">Tweet</a>
+        </div>
+        <h6 id="error-message"></h6>
+        <div id="examples-section">
+          <div class="header"><h4>Examples:</h4></div>
+          <div id="examples-list"></div>
+        </div>
+
+      </div>        
+      <div id="donation-section">
+        <h5>Twitter:</h5>
+        <a target="_blank" class="button" href="https://twitter.com/timeinblocks">@timeinblocks</a>
+        <h5>Donate:</h5>
+        <h6 id="donation-address"></h6>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
